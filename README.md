@@ -1,4 +1,6 @@
-# nodejs-chatbot
+## Chatbot
+
+![](/imagens/chatbot.png)
 
 # Instalação dos pacotes npm
 
@@ -12,11 +14,6 @@
 # URL
 
 - $ http://localhost:3978/api/messages
-
-## Chatbot
-
-![](/imagens/chatbot.png)
-
 
 # Referências
 
