@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-chatbot",
+  "version": "1.0.0",
+  "description": "Chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chatbor",
+    "botbuilder",
+    "restify",
+    "packages"
+  ],
+  "author": "Leonardo Viana Pereira",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.13.1",
+    "botbuilder-azure": "^4.10.3",
+    "restify": "^8.5.1"
+  }
+}
