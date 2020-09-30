@@ -23,8 +23,8 @@ var bot = new builder.UniversalBot(connector, function (session) {
     session.send("Olá, em que posso lhe ajudar?");
 }).set('storage', inMemoryStorage); //Usando o armazenamento de estado na memória
 
-// Será necessário baixar o Bot Framework Emulator para testar o código
-// https://github.com/Microsoft/BotFramework-Emulator/releases
+/* Será necessário baixar o Bot Framework Emulator para testar o código
+ https://github.com/Microsoft/BotFramework-Emulator/releases */
 
 
 
