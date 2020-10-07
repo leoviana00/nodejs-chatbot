@@ -1,13 +1,11 @@
 // Adicionando pacotes
 var restify = require('restify');
 var builder = require('botbuilder');
-
 // Configurando a porta que o projeto irá responder
 var server = restify.createServer();
 server.listen(process.env.port || process.env.PORT || 3978, function () {
     console.log('%s listening to %s', server.name, server.url);
 });
-
 // Criando um conector com o Bot Framework.
 var inMemoryStorage = new builder.MemoryBotStorage();
 var connector = new builder.ChatConnector({
@@ -22,7 +20,6 @@ var bot = new builder.UniversalBot(connector, function (session) {
     session.send("Você disse: %s", session.message.text);
     session.send("Olá, em que posso lhe ajudar?");
 }).set('storage', inMemoryStorage); //Usando o armazenamento de estado na memória
-
 /* Será necessário baixar o Bot Framework Emulator para testar o código
  https://github.com/Microsoft/BotFramework-Emulator/releases */
 
