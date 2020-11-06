@@ -19,8 +19,7 @@ server.post('/api/messages', connector.listen());
 var bot = new builder.UniversalBot(connector, function (session) {
     session.send("Você disse: %s", session.message.text);
     session.send("Olá, em que posso lhe ajudar?");
-}).set('storage', inMemoryStorage); 
-//Usando o armazenamento de estado na memória
+}).set('storage', inMemoryStorage); //Usando o armazenamento de estado na memória
 /* Será necessário baixar o Bot Framework Emulator para testar o código
  https://github.com/Microsoft/BotFramework-Emulator/releases */
 
